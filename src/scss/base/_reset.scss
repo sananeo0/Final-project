@@ -1,0 +1,30 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"vremenagrotesk",sans-serif;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;   
+}
+
+ul{
+    list-style: none;
+    li{
+        a{
+            text-decoration: none;
+        }
+    }
+}

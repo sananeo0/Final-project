@@ -1,0 +1,18 @@
+header {
+    .top-bar {
+        position: relative;
+        color: #343a40;
+        background: #e9ecef;
+        font-weight: 300;
+
+        .top-bar-container {
+            .row {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "vremenagrotesk", sans-serif;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+header .top-bar {
+  position: relative;
+  color: #343a40;
+  background: #e9ecef;
+  font-weight: 300;
+}
+header .top-bar .top-bar-container .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}/*# sourceMappingURL=main.css.map */
