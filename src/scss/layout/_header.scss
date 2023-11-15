@@ -12,6 +12,65 @@ header {
                 flex-wrap: wrap;
                 margin-right: -15px;
                 margin-left: -15px;
+                justify-content: space-around;
+
+                .col {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .first-col {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        justify-content: center;
+
+                        .twitter-logo {
+                            margin-right: 1.3rem;
+                        }
+
+                        li {
+                            margin-right: 0.6rem;
+
+                            a {
+                                color: black;
+
+                                i {
+                                    margin-right: 0.5rem;
+                                    transition: 280ms linear;
+                                    color: black;
+
+                                    &:hover {
+                                        color: #bcac76;
+                                    }
+                                }
+                                .bi-telephone:hover{
+                                    color: black;
+                                }
+
+                            }
+                        }
+                    }
+
+                    p{
+                        margin: 0;
+                    }
+                    .dropdown{
+                        margin: 1rem;
+                        
+                        .main-button{
+                            font-size: 0.875rem;
+                            background-color:#e9ecef;
+                            border: none;
+                            color: black;
+                        }
+
+                        .main-button::after{
+                            
+                        }
+                    }
+                }
+
             }
         }
     }

@@ -39,4 +39,48 @@ header .top-bar .top-bar-container .row {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: space-around;
+}
+header .top-bar .top-bar-container .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .top-bar .top-bar-container .row .col .first-col {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+header .top-bar .top-bar-container .row .col .first-col .twitter-logo {
+  margin-right: 1.3rem;
+}
+header .top-bar .top-bar-container .row .col .first-col li {
+  margin-right: 0.6rem;
+}
+header .top-bar .top-bar-container .row .col .first-col li a {
+  color: black;
+}
+header .top-bar .top-bar-container .row .col .first-col li a i {
+  margin-right: 0.5rem;
+  transition: 280ms linear;
+  color: black;
+}
+header .top-bar .top-bar-container .row .col .first-col li a i:hover {
+  color: #bcac76;
+}
+header .top-bar .top-bar-container .row .col .first-col li a .bi-telephone:hover {
+  color: black;
+}
+header .top-bar .top-bar-container .row .col p {
+  margin: 0;
+}
+header .top-bar .top-bar-container .row .col .dropdown {
+  margin: 1rem;
+}
+header .top-bar .top-bar-container .row .col .dropdown .main-button {
+  font-size: 0.875rem;
+  background-color: #e9ecef;
+  border: none;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
