@@ -21,7 +21,7 @@
       <div class="top-bar">
         <div class="top-bar-container">
           <div class="row">
-            <div class="col">
+            <div class="col" id="col1">
               <ul class="first-col">
                 <li>
                   <a href="#"><i class="bi bi-facebook"></i></a>
@@ -33,14 +33,14 @@
                   <a href="#">
                     <i class="bi bi-telephone"></i>
                     020-800-456-747
-                  </a>  
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="col">
-                <p>Free in-store delivery</p>
+              <p>Free in-store delivery</p>
             </div>
-            <div class="col">
+            <div class="col" id="col3">
               <div class="dropdown">
                 <a
                   class="btn btn-secondary main-button"
@@ -48,10 +48,11 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  aria-haspopup="true"
                 >
                   English
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-end" >
                   <li><a class="dropdown-item" href="#">German</a></li>
                   <li><a class="dropdown-item" href="#">French</a></li>
                 </ul>
@@ -75,7 +76,26 @@
           </div>
         </div>
       </div>
-      <nav></nav>
+      <nav>
+        <a href="#">Varkala</a>
+        <div class="navbar-content">
+          <ul>
+          <li class="nav-item dropdown active">
+            <a href="#">Home</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Home 1 -Fashion</a>
+            <a href="#" class="dropdown-item">Home 2 -Fashion</a>
+            <a href="#" class="dropdown-item">Home 3 -Design <span class="badge badge-primary-light">New</span></a>
+            <a href="#" class="dropdown-item">Home 4 -Design <span class="badge badge-primary-light">New</span></a>
+          </div>
+          </li>
+          <li class="nav-item dropdown"></li>
+          <li class="nav-item dropdown"></li>
+          <li class="nav-item dropdown"></li>
+          <li class="nav-item dropdown"></li>
+        </ul>
+      </div>
+      </nav>
     </header>
   </body>
   <script

@@ -9,21 +9,22 @@ header {
             .row {
                 display: flex;
                 align-items: center;
-                flex-wrap: wrap;
-                margin-right: -15px;
-                margin-left: -15px;
-                justify-content: space-around;
+                height: 54px;
+                margin-right: 15px;
+                margin-left: 15px;
 
                 .col {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    height: 54px;
 
                     .first-col {
                         display: flex;
                         align-items: center;
-                        margin: 0;
                         justify-content: center;
+                        margin: 0;
+                        padding: 0;
 
                         .twitter-logo {
                             margin-right: 1.3rem;
@@ -44,7 +45,8 @@ header {
                                         color: #bcac76;
                                     }
                                 }
-                                .bi-telephone:hover{
+
+                                .bi-telephone:hover {
                                     color: black;
                                 }
 
@@ -52,25 +54,97 @@ header {
                         }
                     }
 
-                    p{
+                    p {
+                        font-size: 0.875rem;
                         margin: 0;
                     }
-                    .dropdown{
+
+                    .dropdown {
                         margin: 1rem;
-                        
-                        .main-button{
+
+                        .main-button {
+                            display: flex;
                             font-size: 0.875rem;
-                            background-color:#e9ecef;
+                            background-color: #e9ecef;
                             border: none;
                             color: black;
+                            height: 50px;
+                            align-items: center;
                         }
 
-                        .main-button::after{
-                            
+                        .dropdown-menu {
+                            padding: 8px;
+                            transition: 300ms ease;
+
+                        }
+
+                        .dropdown-item {
+                            color: #868e96;
+                            font-size: 0.9rem;
+                        }
+
+                        .dropdown-item:hover {
+                            color: #16181b;
+                        }
+
+                        .main-button::after {
+                            font-family: 'bootstrap-icons';
+                            content: '\F282';
+                            margin-left: 5px;
+                            font-size: small;
                         }
                     }
                 }
 
+                #col1 {
+                    justify-content: flex-start;
+                }
+
+                #col3 {
+                    justify-content: flex-end;
+
+                }
+            }
+        }
+    }
+
+    nav {
+        border: transparent;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1rem;
+        font-weight: 600;
+        margin-top: 1.2rem;
+
+        a {
+            color: black;
+            display: inline-block;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+
+        .navbar-content {
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                margin-bottom: 0;
+                li {
+                    .dropdown-menu {
+                        margin-top: 1.2rem;
+                        transform: translateY(30px);
+                        display: none;
+                        float:none;
+                        box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.17);
+                        top: 100%;
+                        left: 0;
+                        z-index: 1000;
+                    
+                    }
+                }
             }
         }
     }

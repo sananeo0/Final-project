@@ -36,21 +36,22 @@ header .top-bar {
 header .top-bar .top-bar-container .row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: space-around;
+  height: 54px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 header .top-bar .top-bar-container .row .col {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 54px;
 }
 header .top-bar .top-bar-container .row .col .first-col {
   display: flex;
   align-items: center;
-  margin: 0;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 header .top-bar .top-bar-container .row .col .first-col .twitter-logo {
   margin-right: 1.3rem;
@@ -73,14 +74,74 @@ header .top-bar .top-bar-container .row .col .first-col li a .bi-telephone:hover
   color: black;
 }
 header .top-bar .top-bar-container .row .col p {
+  font-size: 0.875rem;
   margin: 0;
 }
 header .top-bar .top-bar-container .row .col .dropdown {
   margin: 1rem;
 }
 header .top-bar .top-bar-container .row .col .dropdown .main-button {
+  display: flex;
   font-size: 0.875rem;
   background-color: #e9ecef;
   border: none;
   color: black;
+  height: 50px;
+  align-items: center;
+}
+header .top-bar .top-bar-container .row .col .dropdown .dropdown-menu {
+  padding: 8px;
+  transition: 300ms ease;
+}
+header .top-bar .top-bar-container .row .col .dropdown .dropdown-item {
+  color: #868e96;
+  font-size: 0.9rem;
+}
+header .top-bar .top-bar-container .row .col .dropdown .dropdown-item:hover {
+  color: #16181b;
+}
+header .top-bar .top-bar-container .row .col .dropdown .main-button::after {
+  font-family: "bootstrap-icons";
+  content: "\f282";
+  margin-left: 5px;
+  font-size: small;
+}
+header .top-bar .top-bar-container .row #col1 {
+  justify-content: flex-start;
+}
+header .top-bar .top-bar-container .row #col3 {
+  justify-content: flex-end;
+}
+header nav {
+  border: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+header nav a {
+  color: black;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+header nav .navbar-content ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+header nav .navbar-content ul li .dropdown-menu {
+  margin-top: 1.2rem;
+  transform: translateY(30px);
+  display: none;
+  float: none;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.17);
+  top: 100%;
+  left: 0;
+  z-index: 1000;
 }/*# sourceMappingURL=main.css.map */
