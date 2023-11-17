@@ -127,23 +127,181 @@ header {
         }
 
         .navbar-content {
+            flex-grow: 1;
+            align-items: center;
+
             ul {
                 display: flex;
-                flex-direction: column;
                 padding-left: 0;
                 margin-bottom: 0;
+
                 li {
+                    position: relative;
+
                     .dropdown-menu {
                         margin-top: 1.2rem;
-                        transform: translateY(30px);
-                        display: none;
-                        float:none;
-                        box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.17);
+                        will-change: transform, opacity;
+                        display: block;
+                        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.17);
                         top: 100%;
                         left: 0;
                         z-index: 1000;
-                    
+                        border-radius: 0;
+                        min-width: 10rem;
+                        padding: .5rem 0;
+                        margin: .125rem 0 0;
+                        font-size: .875rem;
+                        color: #212529;
+                        text-align: left;
+                        list-style: none;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 0 solid rgba(0, 0, 0, 0.15);
+
+                        .dropdown-item {
+                            display: block;
+                            width: 100%;
+                            padding: .4rem 1.5rem;
+                            clear: both;
+                            font-weight: 400;
+                            color: #868e96;
+                            white-space: nowrap;
+                            background-color: transparent;
+                            border: 0;
+                            font-size: .875rem;
+
+                            &:hover {
+                                color: black;
+                            }
+
+                            .badge {
+                                color: #bcac76;
+                                background-color: #f7f5ef;
+                            }
+                        }
                     }
+
+                    #home {
+                        transform: translateY(30px);
+                        display: none;
+                    }
+
+                    #shop {
+                        transform: translateX(-50px) translateY(0px);
+                        min-width: 750px;
+                        display: none;
+
+                        .row {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            margin-right: -15px;
+                            margin-left: -15px;
+
+                            .col {
+                                position: relative;
+
+
+                                .dropdown-header {
+                                    display: block;
+                                    padding: .5rem 1.5rem;
+                                    margin-bottom: 0;
+                                    font-size: .875rem;
+                                    color: #212529;
+                                    white-space: nowrap;
+                                    font-weight: 700;
+                                    line-height: 1.3;
+                                }
+
+                                .bg-img {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 0;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+
+                    #icons {
+                        transform: translateY(30px);
+                        min-width: 750px;
+                        display: none;
+                    }
+
+                    .megamenu {
+                        transform: translateX(-50%) translateY(0px);
+                        display: block;
+                        left: 50%;
+                        overflow: hidden;
+                        width: 100%;
+                        max-width: 1300px;
+                        margin-top: -2px;
+                        border: none;
+                        z-index: 9999;
+                        
+                        .col-log-3,
+                        .col-sm-6 {
+                            position: relative;
+                            padding-right: 15px;
+                            padding-left: 15px;
+
+                            .mb-3,
+                            .my-3 {
+                                margin-bottom: 1rem;
+                            }
+
+                            .img-fluid {
+                                max-width: 13rem;
+                                height: auto;
+                            }
+
+                            img {
+                                vertical-align: middle;
+                                border-style: none;
+                            }
+
+                            h6 {
+                                font-size: 1rem;
+                                font-weight: 700;
+                                line-height: 1.3;
+                                margin-bottom: .5rem;
+                            }
+
+                            .megamenu-list {
+                                margin-bottom: 1.5rem;
+                                padding: 0;
+                                font-size: 0.8rem;
+                                flex-direction: column;
+
+                                .megamenu-list-item {
+
+                                    .megamenu-list-link {
+                                        padding: 5px 0;
+                                        color: #868e96;
+                                        background-color: transparent;
+                                        font-size: 0.8rem;
+
+                                        &:hover {
+                                            color: #bcac76;
+                                        }
+
+                                        .badge {
+                                            color: #bcac76;
+                                            background-color: #f7f5ef;
+                                            margin-left: 0.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+
                 }
             }
         }

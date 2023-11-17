@@ -6,7 +6,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"vremenagrotesk",sans-serif;
+    font-family: "vremenagrotesk", sans-serif;
 }
 
 *::after,
@@ -16,15 +16,24 @@ html {
 
 a,
 a:visited,
-a:active{
-    text-decoration: none;   
+a:active {
+    text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
-    li{
-        a{
+
+    li {
+        a {
             text-decoration: none;
         }
     }
 }
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+}
+

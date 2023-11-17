@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -52,7 +56,7 @@
                 >
                   English
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" >
+                <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="#">German</a></li>
                   <li><a class="dropdown-item" href="#">French</a></li>
                 </ul>
@@ -80,21 +84,156 @@
         <a href="#">Varkala</a>
         <div class="navbar-content">
           <ul>
-          <li class="nav-item dropdown active">
-            <a href="#">Home</a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Home 1 -Fashion</a>
-            <a href="#" class="dropdown-item">Home 2 -Fashion</a>
-            <a href="#" class="dropdown-item">Home 3 -Design <span class="badge badge-primary-light">New</span></a>
-            <a href="#" class="dropdown-item">Home 4 -Design <span class="badge badge-primary-light">New</span></a>
-          </div>
-          </li>
-          <li class="nav-item dropdown"></li>
-          <li class="nav-item dropdown"></li>
-          <li class="nav-item dropdown"></li>
-          <li class="nav-item dropdown"></li>
-        </ul>
-      </div>
+            <li class="nav-item dropdown active">
+              <a href="#">Home</a>
+              <div class="dropdown-menu" id="home">
+                <a href="#" class="dropdown-item">Home 1 -Fashion</a>
+                <a href="#" class="dropdown-item">Home 2 -Fashion</a>
+                <a href="#" class="dropdown-item"
+                  >Home 3 -Design
+                  <span class="badge badge-primary-light">New</span></a
+                >
+                <a href="#" class="dropdown-item"
+                  >Home 4 -Design
+                  <span class="badge badge-primary-light">New</span></a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#">Shop</a>
+              <div class="dropdown-menu" id="shop">
+                <div class="row">
+                  <div class="col col-lg-4 col-sm-6 p-lg-5">
+                    <h6 class="dropdown-header h6 pl-lg-0">Shop pages</h6>
+                    <a href="#" class="dropdown-item pl-lg-0">Full width</a>
+                    <a href="#" class="dropdown-item pl-lg-0"
+                      >Full width with category menu
+                    </a>
+                    <a href="#" class="dropdown-item pl-lg-0"
+                      >Full width with big products
+                    </a>
+                    <a href="#" class="dropdown-item pl-lg-0">Fixed width </a>
+                    <a href="#" class="dropdown-item pl-lg-0"
+                      >Fixed width & sidebar
+                    </a>
+                    <a href="#" class="dropdown-item pl-lg-0"
+                      >Fixed width & masonry layout
+                      <span class="badge badge-primary-light">New</span></a
+                    >
+                    <a href="#" class="dropdown-item">Subcategories</a>
+                  </div>
+                  <div class="col col-lg-4 col-sm-6 p-lg-5">
+                    <h6 class="dropdown-header h6 pl-lg-0">Product pages</h6>
+                    <a class="dropdown-item pl-lg-0">
+                      Product with sticky info
+                    </a>
+                    <a class="dropdown-item pl-lg-0">
+                      Product with background
+                    </a>
+                    <a class="dropdown-item pl-lg-0"> Product standard </a>
+                  </div>
+                  <div class="col col-lg-4 d-none d-lg-block">
+                    <img
+                      class="bg-img"
+                      src="./assets/kyle-loftus-596319-unsplash-cropped.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#">Icons</a>
+              <div class="dropdown-menu py-lg-0" id="icons">
+                <div class="row py-lg-5 px-4">
+                  <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5">
+                    <a class="text-reset"> <h6>Trousers</h6></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown position-static">
+              <a href="#">Pages</a>
+              <div class="dropdown-menu megamenu px-4 px-lg-5 py-lg-5">
+                <div class="row navbar-row">
+                  <div class="col-lg-3 col-sm-6">
+                    <img
+                      class="img-fluid mb-3 d-none d-lg-block"
+                      src="./assets/christopher-campbell-28571-unsplash.jpg"
+                    />
+                    <h6>Homepage</h6>
+                    <ul class="megamenu-list">
+                      <li class="megamenu-list-item">
+                        <a class="megamenu-list-link" href="#"
+                          >Home 1 -Fashion</a
+                        >
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a class="megamenu-list-link" href="#"
+                          >Home 2 -Fashion</a
+                        >
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a class="megamenu-list-link" href="#"
+                          >Home 3 -Design
+                          <span class="badge badge-primary-light ml-1"
+                            >New</span
+                          ></a
+                        >
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link"
+                          >Home 4 -Design
+                          <span class="badge badge-primary-light ml-1"
+                            >New</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                    <h6>Category</h6>
+                    <ul class="megamenu-list list-unstyled mb-lg-0">
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link">Full width</a>
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link"
+                          >Full width with category menu</a
+                        >
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link"
+                          >Full width with big products
+                        </a>
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link">Fixed width </a>
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link"
+                          >Fixed width & sidebar
+                        </a>
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link"
+                          >Fixed width & masonry layout
+                          <span class="badge badge-primary-light ml-1"
+                            >New</span
+                          ></a
+                        >
+                      </li>
+                      <li class="megamenu-list-item">
+                        <a href="#" class="megamenu-list-link">Subcategories   </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <img src="./assets/ian-dooley-347962-unsplash.jpg" class="img-fluid mb-3 d-none d-lg-block">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown"></li>
+          </ul>
+        </div>
       </nav>
     </header>
   </body>
