@@ -1,0 +1,59 @@
+footer {
+    display: block;
+
+    .bg-gray-100 {
+        background-color: #f8f9fa;
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+
+                .service-column {
+                    display: flex;
+                    align-items: center;
+
+                    .text-sm {
+                        font-size: .875rem;
+                    }
+
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-top: -1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .text-muted {
+        color: #868e96;
+
+        .input-group {
+            border-bottom: 1px solid grey;
+            transition: all .5s;
+
+            &:hover {
+                border-bottom: 1px solid black;
+            }
+
+            .form-control{
+                border: 0;
+            }
+        }
+
+
+    }
+
+}
