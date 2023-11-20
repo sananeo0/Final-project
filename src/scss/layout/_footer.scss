@@ -38,7 +38,12 @@ footer {
     }
 
     .text-muted {
+        font-size: 14px;
         color: #868e96;
+
+        .text-hover-dark:hover {
+            color: black !important;
+        }
 
         .input-group {
             border-bottom: 1px solid grey;
@@ -48,12 +53,46 @@ footer {
                 border-bottom: 1px solid black;
             }
 
-            .form-control{
+            .form-control {
                 border: 0;
             }
+        }
+
+        .col-lg-7 {
+            padding-left: 4rem;
         }
 
 
     }
 
+    .py-6 {
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+
+    }
+
+    .link-animated {
+        position: relative;
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-animated::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        transition: width 0.3s ease;
+    }
+
+    .link-animated:hover::before {
+        width: 100%;
+    }
+
+    .text-reset,.mb-lg-0 {
+        color: #868e96 !important;
+    }
 }
